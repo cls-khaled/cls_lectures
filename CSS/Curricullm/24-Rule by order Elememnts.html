@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Rule by order Elememnts</title>
+
+          <style>
+                    .container{
+                              width: 1000px;
+                              height: 1000px;
+                              background-color: red;
+                              margin: 100px;
+                    }
+
+                    .container img:first-child{
+                              width: 150px;
+                              height: 150px;
+                              border: solid 5px black;
+                    }
+
+                    .container img:last-child{
+                              width: 250px;
+                              height: 250px;
+                              border: solid 10px black;
+                    }
+
+                    .container img:nth-child(2){
+                              width: 350px;
+                              height:350px;
+                              border: groove 30px rgb(16, 29, 128);
+                    }
+
+                    .container img:nth-child(3){
+                              width: 450px;
+                              height:450px;
+                              border: double 30px rgb(5, 177, 105);
+                    }
+          </style>
+</head>
+<body>
+       
+          <div class="container">
+                    <img src="./Photo/fashion2.png">
+                    <img src="./Photo/fashion2.png">
+                    <img src="./Photo/fashion2.png">
+                    <img src="./Photo/fashion2.png">
+                    <img src="./Photo/fashion2.png">
+          </div>
+</body>
+</html>

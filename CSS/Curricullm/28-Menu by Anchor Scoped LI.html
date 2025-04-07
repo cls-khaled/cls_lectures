@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title> menu and Submenu </title>
+          <style>
+                    *{
+                              list-style-type: none;
+                              padding: 0px;
+                              margin: 0px;
+                    }
+                    .menusite{
+                              width: 1000px;
+                              height: 50px;
+                              background-color: blue;
+                              margin: 50px auto;
+                    }
+
+                    .menusite ul li{
+                              width: 150px;
+                              height: 50px;
+                              background-color: red;
+                              float: left;
+                              text-align: center;
+                              line-height: 50px;
+                    }
+
+                    .menusite ul li:hover{
+                              background-color: orange;
+                              color: blue;
+                              cursor: pointer;
+                    }
+
+                    .menusite ul li ul{
+                              visibility: hidden;
+                    }
+
+                    .menusite ul li:hover ul{
+                              visibility: visible;
+                    }
+
+                    .menusite ul li ul a li{
+                              width: 300px;
+                              background-color: aqua;
+                              border: solid 2px black;
+                    }
+
+                    .menusite ul li ul a li:hover{
+                              background-color: blueviolet;
+                              color: white;
+                              border: dotted 10px yellow;
+                    }
+          </style>
+</head>
+<body>
+     
+          <div class="menusite">
+
+                    <ul>
+                              <li>Home
+
+                                        <ul>
+                                           <li><a href="https://nest-frontend-v6.vercel.app/"> Home option</a></li>
+                                           <li><a href="#"></a> Home option</a></li>
+                                           <li><a href="#"></a> Home option</a></li>
+                                           <li><a href="#"></a> Home option</a></li>
+                                           <li><a href="#"></a> Home option</a></li>
+                                          
+                                        </ul>
+                              </li>
+                              <li>Products </li>
+
+                                     
+                                        
+                             
+                              <li>Services</li>
+                              <li>About Us</li>
+                              <li>Contact US</li>
+                    </ul>
+          </div>
+</body>
+</html>
