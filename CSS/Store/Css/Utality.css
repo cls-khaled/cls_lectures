@@ -1,0 +1,15 @@
+
+/*Generic Rule */
+*{
+          margin: 0px;
+          padding: 0px;
+          margin: auto;
+}
+/*Declare variables by Css */
+:root{
+          --borderStyle:solid;
+          --BorderColor:rgba(233, 236, 239, 1);
+          --borderthickness:1px     
+}
+
+  
