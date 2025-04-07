@@ -1,22 +1,89 @@
 @import url("./Utality.css");
 
 body{
-          background-color: green;
+          background-color: white;
 
           /* margin: 0px; */
 }
 .navtop{
           width: 100%;
           height: 37px;
-          background-color: gold;
+        
           border-bottom:var(--borderStyle) var(--borderthickness) var(--BorderColor);
 }
 
 .navtop div{
           width: 90%;
           height:37px ;
-          background-color: greenyellow;
+         
           /* margin: auto; */
+}
+
+.navtop div .QuickLinks{
+          width: 321px;
+          height: 37px;
+         
+          float: left;
+          color: var(--linkColor);
+}
+
+.navtop div .QuickLinks a{
+
+          color: var( --linkColor);
+          text-decoration: none;
+          font-size:var(--lnksize);
+          text-align: center;
+          line-height: 37px;
+
+          font-family: var(--linksFontsName);
+          font-weight: var(--linksFontsWeight);
+          font-style: var( --linksFontsStyle);
+}
+
+.navtop div .QuickLinks a:hover
+{
+color: var( --linkColorHover);
+text-decoration: underline;
+}
+
+.navtop div .QuickLinks a::selection
+{
+background-color: var(--linkColorSelection);
+
+}
+
+
+.navtop div  marquee{
+          width: 300px;
+          height: 37px;
+       
+          float: left;
+          color: var(--linkColor);
+          font-size:var(--lnksize);
+          line-height: 50px;
+          text-align: center;
+          font-family: var(--linksFontsName);
+         
+          
+}
+
+.navtop div  .SupportAndLangAndCurrency{
+          width: 370px;
+          height: 37px;
+          /* background-color: red; */
+          float: right;
+}
+
+.navtop div  .SupportAndLangAndCurrency h1{
+          color: var(--linkColor);
+          font-size:var(--lnksize);  
+          font-family: var(--linksFontsName); 
+          font-weight: 100; 
+          line-height: 37px;
+}
+
+.navtop div  .SupportAndLangAndCurrency h1 span{
+          color: var(--linkColorSelection);
 }
 
 .headerSite{
