@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title> Align Item By Flex </title>
+
+          <style>
+                    .conatiner{
+                              
+                              padding: 20px;
+                              height: 100vh;
+                              background-color:yellow;
+
+                              display: flex;
+                             
+                              flex-direction: row-reverse;
+
+                              flex-direction: column;
+
+                              flex-direction: row;
+                              
+                              /* align-items: flex-end;
+                              align-items: center;
+                              align-items: flex-start; */
+
+                              /* align-items: start;
+                              align-items: center;
+                              align-items: end; */
+
+                    }
+
+          .red{
+          padding: 20px;
+          margin: 10px;
+          background-color: red;
+
+          align-self: center;
+          }
+
+          .green{
+          padding: 20px;
+          margin: 10px;
+          background-color: green;
+          align-self: flex-start;
+          }
+
+
+          .blue{
+          padding: 20px;
+          margin: 10px;
+          background-color: blue;
+
+          align-self: flex-end;
+          }
+          </style>
+</head>
+<body>
+        
+          <div class="conatiner">
+
+
+                    <div class="red"></div>
+
+                    <div class="green"></div>
+
+                    <div class="blue"></div>
+
+
+          </div> <!-- end conatiner-->
+</body>
+</html>

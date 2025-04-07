@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title> Flex With Grow - Shrink - order </title>
+
+          <style>
+                    .conatiner{
+                              
+                              padding: 20px;
+                              height: 100vh;
+                              background-color:yellow;
+
+                 
+                               display: flex;
+                               flex-direction: row;
+
+                    
+
+                    }
+
+          .red{
+          padding: 20px;
+          margin: 10px;
+          background-color: red;
+          transition: all 3s;
+        
+
+          }
+
+          .red:hover{
+                    flex-grow: 1;
+          }
+
+          .green{
+          padding: 20px;
+          margin: 10px;
+          background-color: green;
+          /* flex-grow: 2; */
+          transition: all 3s;
+    
+          }
+
+
+          .green:hover{
+                    flex-grow: 1;
+          }
+
+          .blue{
+          padding: 20px;
+          margin: 10px;
+          background-color: blue;
+
+          /* flex-grow: 1; */
+          transition: all 3s;
+
+     
+          }
+
+          .blue:hover{
+                    flex-grow: 1;
+          }
+
+          </style>
+</head>
+<body>
+        
+          <div class="conatiner">
+
+
+                    <div class="red"></div>
+
+                    <div class="green"></div>
+
+                    <div class="blue"></div>
+
+
+          </div> <!-- end conatiner-->
+</body>
+</html>

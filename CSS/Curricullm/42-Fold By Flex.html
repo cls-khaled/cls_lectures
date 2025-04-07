@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Fold By Flex </title>
+
+          <style>
+                    *{
+                              margin:0px;
+                    }
+                    .FoldArea{
+                              width: 100%;
+                              height: 100vh;/*Vh - view port Height */
+                              background-color: red;
+
+                              display: flex;
+                              flex-direction: row;
+                              
+
+                    }
+
+                    .FoldArea div:first-child{
+                              width: 50%;
+                              height: 100vh;
+                              background-color: rgba(5, 150, 161, 1);
+
+                    
+                    }
+
+                    .FoldArea div:last-child{
+                              width: 50%;
+                              height: 100vh;
+                              background-color:rgba(251, 187, 0, 1);
+
+                            
+                    }
+
+
+   .FoldArea div:last-child div:first-child{
+          width: 100%;
+          height: 50vh;
+          background-color: rgba(218, 191, 7, 1);
+   }
+
+
+   .FoldArea div:last-child div:last-child{
+          width: 100%;
+          height: 50vh;
+          background-color: rgba(156, 193, 26, 1);
+   }
+
+   .WhoWeAre{
+          width: 100%;
+          height: 100vh;
+          background-color: blue;
+   }
+          </style>
+</head>
+<body>
+       
+          <div class="FoldArea">
+
+                    <div></div>
+                    <div>
+
+                              <div></div>
+                              <div></div>
+                    </div>
+          </div> <!-- End Fold area -->
+
+          <section class="WhoWeAre">
+
+          </section>
+</body>
+</html>
