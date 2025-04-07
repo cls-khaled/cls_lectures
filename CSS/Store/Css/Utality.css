@@ -4,12 +4,15 @@
           margin: 0px;
           padding: 0px;
           margin: auto;
+          list-style-type: none;
+          text-decoration: none
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 /*Declare variables by Css */
 :root{
+          --PrimaryColor:white;
           --borderStyle:solid;
           --BorderColor:rgba(233, 236, 239, 1);
           --borderthickness:1px;
@@ -17,10 +20,13 @@
           --linkColor:rgba(126, 126, 126, 1);
           --linkColorHover:rgb(53, 53, 53);
           --linkColorSelection:rgba(59, 183, 126, 1);
+          --linkColorSelectionByOpacity:rgba(59, 183, 126, .5);
           --linksFonts:"Lato", sans-serif;
           --linksFontsWeight: 400;
           --linksFontsStyle: normal;
           --lnksize:.8em;
+          --iconsSize:2em;
+          --iconColor:rgba(37, 61, 78, 1);
 
 }
 

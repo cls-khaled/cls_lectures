@@ -63,15 +63,17 @@ background-color: var(--linkColorSelection);
           line-height: 50px;
           text-align: center;
           font-family: var(--linksFontsName);
+          margin-left: 230px;
          
           
 }
 
 .navtop div  .SupportAndLangAndCurrency{
-          width: 370px;
+          width: 200px;
           height: 37px;
-          /* background-color: red; */
-          float: right;
+
+          float: left;
+
 }
 
 .navtop div  .SupportAndLangAndCurrency h1{
@@ -86,10 +88,51 @@ background-color: var(--linkColorSelection);
           color: var(--linkColorSelection);
 }
 
+.navtop div .lang{
+
+          width: 74px;
+          height: 37px;
+        
+          float: right;
+}
+
+.navtop div .lang ul li ul a li img{
+          width: 15px;
+}
+
+.navtop div .lang ul li {
+          cursor: pointer;
+          color: var(--linkColor);
+          text-align: center;
+          line-height: 37px;
+          font-size: .8em;
+}
+
+.navtop div .lang ul li:hover{
+          color: var(--linkColorHover);
+}
+
+.navtop div .lang ul li ul{
+          background-color:var(--PrimaryColor);
+          border:var(--borderStyle) var(--borderthickness) var(--linkColor);
+          border-radius: 0px 0px 5px 5px;
+          padding-bottom: 5px;
+          visibility: hidden;
+}
+.navtop div .lang ul li:hover ul{
+  visibility: visible;
+}
+
+.navtop div .lang ul li ul li{
+          height: 25px;
+
+}
+/*================= Header Site ===============*/
+
 .headerSite{
           width: 100%;
           height: 126px;
-          background-color: pink;
+        
           border-bottom:var(--borderStyle) var(--borderthickness) var(--BorderColor);
 
 }
@@ -97,10 +140,313 @@ background-color: var(--linkColorSelection);
 .headerSite div{
           width: 90%;
           height:126px ;
-           background-color: yellow;
+        
            /* margin: auto; */
 }
+
+.headerSite div a img{
+  width: 180px;
+  height: 55px;
+  margin-top: 30px;
+  margin-left: 20px;
+  float: left;
+}
+
+.headerSite div  .SearchContainer{
+          width:500px;
+          height: 54px;
+          background-color:white;
+          float: left;
+          border: var(--borderStyle) var(--borderthickness) var(--linkColorSelection);
+          margin-top: 30px;
+          margin-left: 20px;
+          border-radius: 5px;
+}
+
+.headerSite div  .SearchContainer .AllCategory{
+          width: 158px;
+          height: 54px;
+  
+          float: left;  
+
+}
+
+.headerSite div  .SearchContainer .AllCategory ul li{
+          cursor: pointer;
+          color: var(--linkColor);
+          text-align: center;
+          line-height: 54px;
+          font-size: 1.1em;          
+}
+
+.headerSite div  .SearchContainer .AllCategory ul li ul{
+  height: 250px;
+  background-color: var(--PrimaryColor);
+  border: var(--borderStyle) var(--borderthickness) var(--linkColor);
+  overflow-y:scroll;
+  padding-left: 5px;
+
+}
+
+.headerSite div  .SearchContainer .AllCategory ul li ul::-webkit-scrollbar{
+  width: 10px;
+  background-color: var(--PrimaryColor);
+}
+
+.headerSite div  .SearchContainer .AllCategory ul li ul::-webkit-scrollbar-thumb
+{
+background-color:var(--linkColorHover);
+width: 7px;
+border-radius: 10px;
+}
+.headerSite div  .SearchContainer .AllCategory ul li ul li{
+
+  height: 20px;font-size: .8em;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0px;
+  padding: 0px 5px 0px 5px ;
+  line-height: 20px;
+  
+}
+
+.headerSite div  .SearchContainer .AllCategory ul li ul {
+  visibility: hidden;
+}
+
+.headerSite div  .SearchContainer .AllCategory ul li:hover ul 
+{
+  visibility: visible;
+}
+
+.headerSite div  .SearchContainer .AllCategory ul li ul li:hover{
+  background-color: var(--linkColorSelectionByOpacity);
+}
+
+.headerSite div  .SearchContainer .AllCategory ul li ul li.active{
+  background-color: var(--linkColor);
+  color: white;
+}
+.headerSite div  .SearchContainer .AllCategory ul li ul li:first-child{
+
+  height: 40px;
+  margin-bottom: 10px;
+}
+.headerSite div  .SearchContainer .AllCategory ul li ul li input[type="text"]
+{
+  width: 95%;
+  height: 30px;
+  border: var(--borderStyle) var(--borderthickness) var(--linkColorSelection);
+  border-radius: 5px;
+  text-indent: 10px;
+  margin-top: 10px;
+
+}
+
+.headerSite div  .SearchContainer input[type="search"]
+{
+  width: 60%;
+  height:54px ;
+  text-indent: 10px;
+  color: var(--linkColorSelection);
+  font-size: 1.2em;
+
+  border: unset;
+}
+
+.headerSite div  .SearchContainer input[type="search"]::placeholder
+{
+
+  color: var(--linkColorSelection);
+  font-size: .9em;
+}
+
+.headerSite div  .SearchContainer .bx-search{
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.headerSite div  .SearchContainer .bx-search:hover{
+
+  color: var(--linkColorSelection);
+}
+
+.headerSite div .Location{
+  width: 158px;
+  height: 54px;
+  margin-top: 30px;
+  float: left;  
  
+  margin-left: 30px;
+ 
+  -webkit-box-shadow: -2px 5px 16px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 5px 16px 0px rgba(0,0,0,0.75);
+box-shadow: -2px 5px 16px 0px rgba(0,0,0,0.75);
+
+}
+
+.headerSite div   .Location  ul li{
+  cursor: pointer;
+  color: var(--linkColor);
+  text-align: center;
+  line-height: 54px;
+  font-size: 1.1em;          
+}
+
+.headerSite div   .Location ul li ul{
+height: 250px;
+background-color: var(--PrimaryColor);
+border: var(--borderStyle) var(--borderthickness) var(--linkColor);
+overflow-y:scroll;
+padding-left: 5px;
+
+}
+
+.headerSite div   .Location ul li ul::-webkit-scrollbar{
+width: 10px;
+background-color: var(--PrimaryColor);
+}
+
+.headerSite div    .Location ul li ul::-webkit-scrollbar-thumb
+{
+background-color:var(--linkColorHover);
+width: 7px;
+border-radius: 10px;
+}
+.headerSite div    .Location ul li ul li{
+
+height: 20px;font-size: .8em;
+text-align: left;
+font-family: Arial, Helvetica, sans-serif;
+margin-bottom: 0px;
+padding: 0px 5px 0px 5px ;
+line-height: 20px;
+
+}
+
+.headerSite div   .Location ul li ul {
+visibility: hidden;
+}
+
+.headerSite div    .Location ul li:hover ul 
+{
+visibility: visible;
+}
+
+.headerSite div    .Location ul li ul li:hover{
+background-color: var(--linkColorSelectionByOpacity);
+}
+
+.headerSite div   .Location ul li ul li.active{
+background-color: var(--linkColor);
+color: white;
+}
+.headerSite div    .Location ul li ul li:first-child{
+
+height: 40px;
+margin-bottom: 10px;
+}
+.headerSite div   .Location ul li ul li input[type="text"]
+{
+width: 95%;
+height: 30px;
+border: var(--borderStyle) var(--borderthickness) var(--linkColorSelection);
+border-radius: 5px;
+text-indent: 10px;
+margin-top: 10px;
+
+}
+
+.headerSite div .cartAndCompareandFav{
+  width: 300px;
+  height: 50px;
+
+  float: left;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.headerSite div .cartAndCompareandFav div{
+  width: 30%;
+  height: 50px;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+
+.headerSite div .cartAndCompareandFav div .bx-git-compare,.bxs-heart,.bxs-cart-alt{
+ 
+  font-size: var(--iconsSize);
+  color: var(--iconColor);
+}
+
+.headerSite div .cartAndCompareandFav div span{
+  width: 20px;
+  height: 20px;
+  background-color: var(--linkColorSelection);
+
+  border-radius: 100%;
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+
+  position: absolute;
+  left:20px;
+}
+
+.headerSite div .cartAndCompareandFav div p{
+   position: absolute;
+   left: 50px;
+   bottom: 15px;
+}
+
+.headerSite div .ProfileAccount{
+  width:100px;
+  height: 30px;
+  float: left;
+  margin-top: 50px;
+  margin-left: 30px;
+ 
+}
+
+.headerSite div .ProfileAccount .bx-user,span
+{
+  color: var( --iconColor);
+  font-size:1.2em;
+  cursor: pointer;
+}
+
+.headerSite div .ProfileAccount ul{
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  border-radius:0px 0px 5px 5px ;
+
+  -webkit-box-shadow: -2px 6px 10px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 6px 10px -7px rgba(0,0,0,0.75);
+box-shadow: -2px 6px 10px -7px rgba(0,0,0,0.75);
+
+visibility: hidden;
+}
+
+.headerSite div .ProfileAccount:hover ul
+{
+  visibility: visible;
+}
+
+.headerSite div .ProfileAccount ul a li{
+  width: 100%;
+  height: 30px;
+  text-align: left;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+.headerSite div .ProfileAccount ul a{
+  color: var(--linkColor);
+  font-size: 1.5em;
+}
+/*================= Menu Site ===============*/
+
 .menuSite{
 
           background-color: blue;
