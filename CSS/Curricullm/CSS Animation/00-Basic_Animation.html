@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+        div {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+          animation-name: example;
+          animation-duration: 4s;
+        }
+        
+        @keyframes example {
+          from {background-color:green;}
+          to {background-color: purple;}
+        }
+
+        /*========= animation-duration============*/
+        
+
+@keyframes percntageAnimation {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: percntageAnimation;
+  animation-duration: 4s;
+}
+  
+/*============================================ */
+.boxByPOsition {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: animationByPosition;
+  animation-duration: 4s;
+}
+
+@keyframes animationByPosition {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/*============= Animation Delay ====================*/
+.AnimationDelayBox {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: AnimationDelay;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+@keyframes AnimationDelay {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+
+/*========== Delay By Negative = Plus Duration ===*/
+.DelayByNegativeBox {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: DelayByNegative;
+  animation-duration: 4s;
+  animation-delay: -2s;
+}
+
+@keyframes DelayByNegative {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* =========== animation-iteration-count =============*/
+
+.IterationAnimationBox {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: IterationAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+}
+
+@keyframes IterationAnimation {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/*============ animation continue for ever By Infint ===============*/
+
+.AnimationForEverBox {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: animationForEver;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animationForEver {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/*================= Animation in Reverse Direction ======================*/
+/*
+normal - The animation is played as normal (forwards). This is default
+reverse - The animation is played in reverse direction (backwards)
+alternate - The animation is played forwards first, then backwards
+alternate-reverse - The animation is played backwards first, then forwards
+*/
+
+.AnimationReverseBox {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: AnimationReverse;
+  animation-duration: 4s;
+  animation-direction: reverse;  
+}
+
+@keyframes AnimationReverse {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/*=========== ALternate =============*/
+.AlternateAnimationBox {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: alternateAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;  
+}
+
+@keyframes alternateAnimation {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/*========== ALternate Reverse ===========*/
+
+.AlternateReverseAnimation {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: alternateReverse;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;  
+}
+
+@keyframes alternateReverse {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/*========== Specify the Speed Curve of the Animation ==  */
+
+/*
+ease - Specifies an animation with a slow start, then fast, then end slowly (this is default)
+linear - Specifies an animation with the same speed from start to end
+ease-in - Specifies an animation with a slow start
+ease-out - Specifies an animation with a slow end
+ease-in-out - Specifies an animation with a slow start and end
+cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier function
+ */
+
+ .SpeedCurveAnimationBox {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  animation: speedCurve 5s;
+  animation-fill-mode: forwards;
+}
+
+#speedCurve1 {animation-timing-function: linear;}
+#speedCurve2 {animation-timing-function: ease;}
+#speedCurve3 {animation-timing-function: ease-in;}
+#speedCurve4 {animation-timing-function: ease-out;}
+#speedCurve5 {animation-timing-function: ease-in-out;}
+
+@keyframes speedCurve {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+
+
+/*========= Specify the fill-mode For an Animation ==*/
+
+/*
+none - Default value. Animation will not apply any styles to the element before or after it is executing
+forwards - The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)
+backwards - The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period
+both - The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions
+
+*/
+
+
+/*=== Forwards ===*/
+.FillModeAnimationBox {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: FillModeAnimation;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
+}
+
+@keyframes FillModeAnimation {
+  from {top: 0px;}
+  to {top: 200px; background-color: blue;}
+}
+ 
+ /*=== Backwards ==*/
+ .FillModeBackWardsBox {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: backwardMode;
+  animation-duration: 3s;  
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes backwardMode {
+  from {top: 0px; background-color: yellow;}
+  to {top: 200px;}
+}
+
+/*=== Both ===*/
+.FillModeBothBox {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: FillModeBoth;
+  animation-duration: 3s;  
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes FillModeBoth {
+  from {top: 0px; background-color: yellow;}
+  to {top: 200px; background-color: blue;}
+}
+
+
+/*========== Before Short Hand ==========*/
+.BeforeshortHandBox {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: BeforeshortHand;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes BeforeshortHand {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/*========== After Short Hand ==============*/
+.AfterShortHandBox {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation: AfterShortHand 5s linear 2s infinite alternate;
+}
+
+@keyframes AfterShortHand {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+</style>
+
+
+
+</head>
+<body>
+    
+
+    
+<h1>=================== @keyframes Rule ========================</h1>
+
+<div></div>
+
+
+
+<h1> =================== animation-duration =====================</h1>
+<div class="box"></div>
+
+<h1> =================== animation- Positions =====================</h1>
+<div class="boxByPOsition"></div>
+
+<h1> =================== animation- Delay =====================</h1>
+<div class="AnimationDelayBox"></div>
+
+<h1> =================== Negtive Time Delay = Positive Time Delay  =====================</h1>
+
+<div class="DelayByNegativeBox"></div>
+
+<h1> ===================  Iteration Animation Box  =====================</h1>
+
+
+<div class="IterationAnimationBox"></div>
+
+<h1> ===================  Animation For Ever  =====================</h1>
+
+<div class="AnimationForEverBox"></div>
+
+<h1> ===================  Animation Reverse =====================</h1>
+
+<div class="AnimationReverseBox"></div>
+
+<h1> ===================  Alternate  Animation =====================</h1>
+
+<div class="AlternateAnimationBox"></div>
+
+<h1> ===================  Alternate  Reverse =====================</h1>
+
+
+<div class="AlternateReverseAnimation"></div>
+
+<h1> ===================  Speed Curve Animation  =====================</h1>
+
+<div class="SpeedCurveAnimationBox" id="speedCurve1"></div>
+<div class="SpeedCurveAnimationBox" id="speedCurve2"></div>
+<div class="SpeedCurveAnimationBox" id="speedCurve3"></div>
+<div class="SpeedCurveAnimationBox" id="speedCurve4"></div>
+<div class="SpeedCurveAnimationBox" id="speedCurve5"></div>
+
+
+<h1> ============== Fill Mode Animation Forward =========</h1>
+<div class="FillModeAnimationBox"></div>
+
+<h1> ============== Fill Mode Animation Backward =========</h1>
+<div class="FillModeBackWardsBox"></div>
+
+<h1> ============== Fill Mode Animation Both =========</h1>
+<div class="FillModeBothBox"></div>
+
+
+<h1>================== Before short Hand Box ========================</h1>
+<div class="BeforeshortHandBox"></div>
+
+<h1>================== After short Hand Box ========================</h1>
+
+<div class="AfterShortHandBox"></div>
+</body>
+</html>

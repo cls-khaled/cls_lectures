@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css animation generator -->
+    <style>
+
+.menu{width:250px ; height: 50px; background-color: blueviolet;
+text-align: center; line-height: 50px; color: white;
+}
+
+.menu .Submenu{ width: 200px; height: 250px; background-color: green; visibility:hidden; 
+position: relative; top:50px ;
+}
+
+.menu:hover .Submenu{ visibility: visible;  -webkit-animation-name: Submenu;
+  animation-name: Submenu;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;}
+
+/* .menu:hover .Submenu{ visibility: visible;} */
+
+
+
+
+
+
+  @-webkit-keyframes Submenu {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+  transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+  -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+  60% {
+  opacity: 1;
+  -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+  transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+  }
+
+
+
+  @keyframes Submenu {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+  transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+  -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+  60% {
+  opacity: 1;
+  -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+  transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+  } 
+    </style>
+</head>
+<body>
+    
+        <div class="menu">
+                <div class="Submenu"></div>
+        </div>
+    
+</body>
+</html>

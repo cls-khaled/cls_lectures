@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* ========= Transation Width ===========*/
+.transationWidth {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+.transationWidth:hover {
+  width: 300px;
+}
+
+/*======== Transation Height =============*/
+.TransationHeight {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 4s;
+}
+
+.TransationHeight:hover {
+  width: 300px;
+  height: 300px;
+}
+
+/*=========== Transation By Speed Curve -------------*/
+
+.TransationSpeedCurve {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border: solid 5px black;
+  transition: width 2s;
+}
+
+#TransationSpeedCurve1 {transition-timing-function: linear;}
+#TransationSpeedCurve2 {transition-timing-function: ease;}
+#TransationSpeedCurve3 {transition-timing-function: ease-in;}
+#TransationSpeedCurve4 {transition-timing-function: ease-out;}
+#TransationSpeedCurve5 {transition-timing-function: ease-in-out;}
+
+.TransationSpeedCurve:hover {
+  width: 300px;
+}
+
+/*----------- Transation By Delay --------------*/
+.TranationByDelay {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 3s;
+  transition-delay: 1s;
+}
+
+.TranationByDelay:hover {
+  width: 300px;
+}
+
+/*================= Transition + Transform ===========================*/
+
+.TransationAndTransaform {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.TransationAndTransaform:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+}
+
+/*=============== More Transations ======================*/
+
+.moreTransation {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
+
+.moreTransation:hover {
+  width: 300px;
+}
+
+/*============== Short Hand ==============*/
+.shortHand {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s linear 1s;
+}
+
+.shortHand:hover {
+  width: 300px;
+}
+    </style>
+</head>
+<body>
+    
+    <h1> ============== transation Width ================== </h1>
+    <div class="transationWidth"></div>
+
+    <h1> ============== transation Height ================== </h1>
+    <div class="TransationHeight"></div>
+
+
+
+    <h1> ============== Transation Speed Curve================= </h1>
+
+    <div class="TransationSpeedCurve" id="TransationSpeedCurve1"></div>
+    <div class="TransationSpeedCurve" id="TransationSpeedCurve2"></div>
+    <div class="TransationSpeedCurve" id="TransationSpeedCurve3"></div>
+    <div class="TransationSpeedCurve" id="TransationSpeedCurve4"></div>
+    <div class="TransationSpeedCurve" id="TransationSpeedCurve5"></div>
+
+
+    <h1>================ Tranation By Delay============================</h1>
+    <div class="TranationByDelay"></div>
+
+
+    <h1>================== Transation And Transaform ==========================</h1>
+    <div class="TransationAndTransaform"></div>
+
+<h1>================== moreTransation ====================</h1>
+    <div class="moreTransation"></div>
+
+    <h1>================== Short Hand  ====================</h1>
+    <div class="shortHand"></div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Responsive Media Screen By Media Query </title>
+          <style>
+                    *{
+                              margin: 0px;
+                    }
+                    body{
+                              background-color: red;
+                              background-image: url("./Photo/travel1.png");
+                              background-size: cover;
+                    }
+
+
+                    .navtop{
+                              width: 100%;
+                              height: 50px;
+                              background-color: black;
+                              border-bottom: solid 10px white;
+                    }
+                    /*----------------------*/
+
+
+                    @media (max-width:750px) {
+                    
+                    body{
+                              background-color: rgb(219, 194, 33);
+                              background-image: url("./Photo/travel2.png");
+                              background-size: cover;
+                    }
+
+
+                    .navtop{
+                              width: 100%;
+                              height: 50px;
+                              background-color: rgb(211, 52, 142);
+                              border-bottom: dotted 30px rgb(14, 156, 9);
+                    }
+
+          }
+
+                   @media (max-width:480px) {
+                    
+                    body{
+                              background-color: green;
+                              background-image: url("./Photo/travel3.png");
+                              background-size: cover;
+                    }
+
+                  
+                   } 
+
+
+                  
+          
+          </style>
+
+     
+</head>
+<body>
+     
+          <div class="navtop"></div>
+</body>
+</html>
