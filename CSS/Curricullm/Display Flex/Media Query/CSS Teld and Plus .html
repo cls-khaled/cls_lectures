@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+     body{ background-color: red;}
+
+/*
+
+Space:
+It is the descendant selector. It allows you to style all the nested child elements of a parent element, regardless of how deep they are in the hierarchy.
+
+div#container p{
+  background-color:green;
+}
+
+*/
+
+/*
+
+> Sign:
+It is a child selector, which selects DIRECT child elements of a specified parent element.
+
+div#container > p {
+  background-color:green;
+}
+
+
+*/
+
+/*
++ (plus) Sign:
+It is Adjacent sibling combinator. It combines two sequences of simple selectors having the same parent and the second one must come IMMEDIATELY after the first.
+
+div + p {
+  background-color:green;
+}
+
+
+*/
+
+
+/*
+~ (tilde) Sign:
+It is general sibling combinator and similar to Adjacent sibling combinator. The difference is that the second selector does NOT have to immediately follow the first one means It will select all elements that is preceded by the former selec
+
+It will target all P elements which follows div i.e. both second and third.
+
+
+
+
+*/
+     div ~ p{
+  background-color:green;
+}
+
+section ~ img{ width: 200px; height: 200px;}
+    </style>
+</head>
+<body>
+
+    
+  <section>
+    
+    <section>
+      <h1> ----- Expected -------</h1>
+
+      <img src="images/BGHeader.jpg">
+    </section>
+
+    <img src="images/BGHeader.jpg">
+    <img src="images/BGHeader.jpg">
+    
+    <section>
+      <h1> ----- Expected -------</h1>
+
+      <img src="images/BGHeader.jpg">
+    </section>
+
+    <h2>
+      <h1> ----- Expected because its not the same its H1  Parent [Section]-------</h1>
+
+      <img src="images/BGHeader.jpg">
+    </h2>
+    <img src="images/BGHeader.jpg">
+    <img src="images/BGHeader.jpg">
+    <img src="images/BGHeader.jpg">
+
+
+  </section>
+
+
+    <div id="container">            
+        <p>First</p>
+         <div>
+             <p>Child Paragraph</p>
+         </div>
+        <p>Second</p>
+        <p>Third</p>      
+     </div>
+
+
+</body>
+</html>

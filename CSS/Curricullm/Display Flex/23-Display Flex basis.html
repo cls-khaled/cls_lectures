@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      .parernt{background-color: yellow; padding: 10px;
+      height: 500px;
+       display: flex;
+     
+     
+       flex-direction: row;
+      /* flex-direction: row; */
+
+      
+    
+    }
+
+      .parernt div {padding: 10px; margin: 10px; }
+      .parernt .item1{ background-color: red; color: white; 
+        
+       
+         flex-basis: 500px; /* if flex-direction: row = width 
+          if flex-direction: column = height
+
+         flex-basis=500 =  width: 500px;
+         */
+         
+         /*
+         Abbrivation 3 Sentence in Single Sentnce 
+         flex-grow:1;
+         flex-shrink:0;
+         flex-basis:200px;
+
+         --------------
+         flex : 1 0 200px //--- Flex grow  - Flex Shrink - Flex Basis 
+         */
+        
+        }
+
+
+
+      .parernt .item2{ background-color: rgb(41, 10, 152); color: white;
+    
+      }
+      .parernt .item3{ background-color: rgb(5, 114, 6); color: white;
+   
+       
+    
+
+   
+      }
+      .parernt .item4{ background-color: rgb(145, 12, 152); color: white;
+       
+      
+      }
+ 
+    </style>
+</head>
+<body dir="rtl">
+    
+    <div class="parernt">
+        <div class="item1" > item 1</div>
+        <div class="item2"  > item 2</div>
+        <div class="item3" > item 3</div>
+        <div class="item4" > item 4</div>
+     
+    </div>
+</body>
+</html>

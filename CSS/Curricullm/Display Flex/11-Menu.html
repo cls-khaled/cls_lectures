@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+
+    <style type="text/css">
+        *{padding: 0px; margin: 0px; box-sizing: border-box;}
+
+        body{background-image: url(images/bgSite.jpg);
+        background-size: cover;
+        background-position: center;
+       
+        background-repeat: no-repeat;
+        }
+
+        .menubar{background-color: green; text-align: center;}
+
+        .menubar ul{display: inline-flex; list-style-type: none; color: white;}
+
+        .menubar ul li{width: 100px; margin: 15px; padding: 15px;}
+
+        .menubar ul li a{color: white; text-decoration: none;}
+
+        .active ,.menubar ul li a:hover{background-color: orange;border-radius: 3px;
+        }
+
+        .menubar ul li ul {display: block; background-color: yellow; color: black;
+        position:absolute;top:50px;  visibility: hidden;}
+
+        .menubar ul li ul li{width: 200px;padding: 10px; border-bottom: solid 1px black;
+        background-color: red; margin: 0px;}
+
+        .menubar ul li:hover ul li{ visibility: visible;}
+    </style>
+    <script src="https://kit.fontawesome.com/adc4864ef0.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  
+    
+    <div class="menubar">
+    <ul>
+        <li class="active"><a href="#">
+            <i class="fa-solid fa-house">  Home </i></a></li>
+           
+
+
+            
+        <li><a href="#">About US</a></li>
+        <li><a href="#">Services</a>
+        <ul>
+            <li>Services options</li>
+            <li>Services options</li>
+            <li>Services options</li>
+            <li>Services options</li>
+        </ul>
+        
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Clients </a></li>
+        <li><a href="#">Investors</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Training</a></li>
+        <li><a href="#">Contact </a></li>
+    </ul>
+</div>
+</body>
+</html>

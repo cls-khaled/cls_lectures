@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title> Flex </title>
+
+          <style>
+
+                    *{
+                              margin: 0px;
+                              list-style-type: none;
+                    }
+/* 
+.container{
+          width: 100%;
+          height: 500px;
+          background-color: red;
+}
+    
+.container div{
+          width: 200px;
+          height: 200px;
+          background-color: green;
+          margin: 20px;
+
+          float: left;
+} */
+
+.container{
+          padding: 10px 0px 0px 10px;
+          background-color: red;
+
+          display: inline;
+          display: inline-block;
+          display:inline-flex;
+
+          display: flex;
+
+          /* flex-direction: row;  */
+
+flex-direction: row-reverse;
+/* 
+flex-wrap: nowrap;
+flex-wrap: wrap;
+flex-wrap: wrap-reverse; */
+
+
+justify-content: space-around;
+justify-content: space-between;
+
+justify-content: space-evenly;
+
+
+/* flex-direction: row;
+flex-wrap: wrap; */
+
+
+flex-flow: row wrap; /*Direction + Wrap */
+}
+   
+.container a{
+ 
+          padding: 10px;
+          background-color: green;
+          text-align: center;
+          font-size: 1.5em;
+          margin:10px;
+
+          color: white;
+}
+
+
+.navtop{
+   
+          padding: 20px;
+          background-color: orange;
+
+          display: flex;
+          justify-content: space-around;
+          justify-content:space-between;
+          justify-content:space-evenly;
+}
+
+.navtop ul{
+          display: flex;
+}
+/*------------ media Query ---------------------*/
+/* @media(max-width:480px)
+{
+          .container
+          {
+                    display: flex;
+                    flex-direction: column;
+                    flex-direction: column-reverse;
+          }    
+} */
+    </style>
+</head>
+<body>
+
+          <div class="navtop">
+
+                    <ul>
+                              <li> Home </li>
+                              <li> Products </li>
+                              <li> Service  </li>
+                              <li> About  </li>
+                    </ul> <!-- End UL -->
+
+                    <img src="./Photo/Logo.svg"> <!-- End Logo -->
+
+                    <div>
+                              <a href="#"> Cart </a>
+                              <a href="#"> Profile  </a>
+                              <a href="#"> Favorite  </a>
+                              <a href="./FlexAR.html"> AR</a>
+                    </div>
+          </div> <!-- End navtop -->
+
+          <div class="container">
+                    <a href="#"> Home </a>
+                    <a href="#"> Products </a>
+                    <a href="#"> Brands </a>
+                    <a href="#"> Servcie </a>
+                    <a href="#"> Store </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+                    <a href="#"> Clients  </a>
+          </div>
+      
+          <!-- <div class="container">
+               
+                    <div></div>
+                    <div></div>
+                    <div></div>
+          </div> -->
+</body>
+</html>

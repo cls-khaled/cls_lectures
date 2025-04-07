@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--
+
+Align-items  
+------------------
+ wrap تتحكم في العناصر عمودياً  ولكن بما ان مفيش
+فمش هيبقا في عناصر علي شكل عمود فسيصبح التحرك علي شكل عمودي
+ولكن العناصر هتفضل علي شكلها وشكلها
+الطبيعي هو انها تبقا علي صف واكيد ده بسبب اني عملت
+Display:flex
+
+***********************************************************************
+ِAlign-content
+---------------------
+ wrapانها بتبقي واخده  Align-items تتحكم في العنصر عمودياً ولكن الفرق عن
+فالعناصر بسبب ال    
+wrap
+هتبقا فوق بعض وتيجي بقا   
+Align-content
+الي بتعمل نفس الي بيعملو 
+Align-items
+انها تتحكم في العنصر عمودياً ولكن الفرق بقا هيكون ان العناصر الي معملولها
+wrap 
+ فوق بعض فمثلا لو انتا عملت
+ Align-content:center
+ العناصر هتبقا في المنتصف راسياً وكمان هيبقي فوق بعض فيصبح المسئول انهم يجيو في المنتصف راسياً 
+Align-content
+اما المسئول علي انهم يبقو تحت بعض هيبقي ال 
+Wrap
+ولما الاتنين مع بعض يبقو في المنتصف عمودياً وكمان فوق بعض (علي شكل عمود) علي عكس
+Align-items
+الي كانت بتخليهم في عمودياً ولكن جنب بعض (علي شكل صف)
+
+**************************************************************************
+
+
+Justify-content
+------------------------
+ودي مختلفه عنهم الاتنين لانها تتحكم تنسيق العنصر افقياً بشكله الطبيعي الي عملته ب
+Display:flex
+الي خلت ال
+divS 
+الابناء في شكل صف فمثلا ال
+center 
+هتخلي العناصر في المنتصف في شكلها الافقي زي ما هي
+
+
+يعني بالمختصر ال 
+Justify 
+بتمشي على محاذاة ال 
+(X)        
+
+و Align-items 
+بتمشي على محاذاة ال 
+(Y)
+
+    -->
+    <style>
+      .parernt{background-color: yellow; padding: 10px;
+      height: 500px;
+       display: flex;
+     
+        
+       /* Flex wrap & Flex Diection =flex-flow*/
+       
+       flex-flow: row wrap ;
+       /* justify-content: space-evenly; */
+
+    /* -- Keeping space Between Items */
+      /* align-items:flex-end; */
+        /* align-items:flex-start; */
+       /* align-items:center;  */
+
+       /*-------  Dont Keep Space Between Items */
+        /* align-content:flex-end; */
+       /* align-content:flex-start;
+        align-content:center;   */
+    
+    }
+
+      .parernt div {padding: 10px; margin: 10px;}
+      .parernt .item1{ background-color: red; color: white;}
+      .parernt .item2{ background-color: rgb(41, 10, 152); color: white;}
+      .parernt .item3{ background-color: rgb(5, 114, 6); color: white;}
+      .parernt .item4{ background-color: rgb(145, 12, 152); color: white;}
+ 
+    </style>
+</head>
+<body dir="rtl">
+    
+    <div class="parernt">
+        <div class="item1" > item 1</div>
+        <div class="item2" > item 2</div>
+        <div class="item3" > item 3</div>
+        <div class="item4" > item 4</div>
+        <div class="item1" > item 1</div>
+        <div class="item2" > item 2</div>
+        <div class="item3" > item 3</div>
+        <div class="item4" > item 4</div>
+        <div class="item1" > item 1</div>
+        <div class="item2" > item 2</div>
+        <div class="item3" > item 3</div>
+        <div class="item4" > item 4</div>
+        <div class="item1" > item 1</div>
+        <div class="item2" > item 2</div>
+        <div class="item3" > item 3</div>
+        <div class="item4" > item 4</div>
+        
+    </div>
+</body>
+</html>
