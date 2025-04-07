@@ -1,0 +1,39 @@
+
+@import url("./MYBody.css");
+
+
+h1{
+          color: rgb(113, 13, 170);
+          font-size: 40px;
+          text-decoration: underline;
+  }
+
+  img{
+          width: 250px;
+          height: 250px;
+          border: double 30px orange;
+  }
+
+  a{ color: green;
+font-size: 50px;
+}
+
+
+.Mena{
+     background-color: blueviolet;
+     width: 500px;
+     height: 300px;     color: yellow; 
+}
+
+.ABDO{
+          border: dashed 20px red;
+          box-shadow: 30px 30px 30px 30px yellow;
+}
+
+#Mlaz{ background-color: greenyellow;
+width: 100%; height: 300px;}
+
+#mariem{
+          border: double 30px orangered;
+          box-shadow: 30px 30px 30px 30px blue;
+}
