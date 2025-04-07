@@ -1,6 +1,3 @@
-
-https://trax.acrothemes.com/bootstrap-v5/single-index-video.html
----------------
 https://pixio-react.vercel.app/
 
 ----------
