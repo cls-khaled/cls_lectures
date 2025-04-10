@@ -10,6 +10,7 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -47,6 +48,7 @@ body{
     
     .navbar-container{
     display:flex;
+    flex-direction: row;
     justify-content:space-between;
     height:64px;
     align-items:center;
@@ -88,8 +90,10 @@ body{
     /*==========  Show Case ===========*/
 
 .showcase-area{
+    width: 100%;
     height:50vh;
-    background:linear-gradient(rgba(240,240,240,0.144),rgba(255,255,255,0.366)),url("./img/header-image2.jpg");
+    background:linear-gradient(rgba(142, 4, 137, 0.144),rgba(227, 53, 230, 0.366)),
+    url("./img/header-image2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -255,7 +259,7 @@ object-position: center;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.871);
+    background: rgba(0,0,0,.9);
 
     /* opacity: 0; */
 
@@ -268,7 +272,7 @@ object-position: center;
 }
 
 .img-container:hover::after{
-    opacity:1 ;
+   
     transform: scaleY(1);
 }
 .img-container:hover .img-content{
@@ -276,7 +280,7 @@ object-position: center;
     top: 40%;
 }
 
-/*============== Food Menu ===================*/
+/*======================== Food Menu  ===========================*/
 
 .food-menu-heading{
     font-size: 4rem;
@@ -284,6 +288,7 @@ object-position: center;
     font-weight: 400;
     color: #666;
 }
+
 
 .food-menu-container{
     display: flex;
@@ -329,7 +334,7 @@ object-position: center;
     font-weight: 700;
 }
 
-/*=========== TestMoniols ==================*/
+/*======================= TestMoniols ======================*/
 #testimonials{
 padding: 5rem 0rem;
 background:rgb(243,243,243);
@@ -473,7 +478,7 @@ background:rgb(243,243,243);
 
 @media(max-width:768px) {
     .navbar{
-        opacity: 0.95;
+        opacity: .9;
 
     }
 
@@ -496,7 +501,7 @@ background:rgb(243,243,243);
         width: 40px;
         top: 20px;
         left: 20px;
-        z-index: 5;
+        z-index: 4;
         opacity: 0;
     }
 
@@ -523,7 +528,7 @@ background:rgb(243,243,243);
         height: 4px;
         width: 100%;
         border-radius: 10px;
-        background: #333333;
+        background: #c60d0d;
     }
 
 

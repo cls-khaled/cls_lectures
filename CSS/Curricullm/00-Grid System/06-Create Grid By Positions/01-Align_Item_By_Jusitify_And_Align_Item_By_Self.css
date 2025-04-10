@@ -1,0 +1,73 @@
+
+.container{
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    width: 400px;
+    height: 400px;
+    display: grid;
+
+    grid-template-columns:120px 120px 120px; 
+
+    grid-template-rows: 120px 120px; 
+
+    /*Align Content */
+    justify-content: center; /* ---- Horizontal  X -----*/
+
+    align-content: center; /* ---- Vertical  Y -----*/
+   /* End Align Content */
+
+     
+   align-items: center;
+   justify-items: stretch;
+
+}
+
+.item-1{
+
+
+    background-color: red;
+
+    
+}
+
+.item-2{
+
+       
+    
+
+     background-color: green;
+}
+
+.item-3{
+
+
+    background-color: yellow;
+    align-self: stretch;
+    /* align-self: end;
+    align-self: start; */
+}
+
+
+.item-4{
+   
+
+    background-color: blueviolet;
+
+    justify-self: center;
+    justify-self: start;
+    justify-self: end;
+    justify-self: stretch;
+}
+
+.item-5{
+   
+
+    background-color: cadetblue;
+}
+
+.item-6{
+   
+
+    background-color: blue;
+}

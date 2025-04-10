@@ -1,0 +1,11 @@
+01- Setup Firefox Browser
+02- Set : live Server in Visual Studio Code
+03- Setup prettier-code formatter 
+04- Go To setting and Search : formatter
+and select Drop Down list  : Editr Default Formatter
+and select :  Prettier -Code formatter
+
+
+======== Temaplates Search in Google =======
+
+css metro tiles

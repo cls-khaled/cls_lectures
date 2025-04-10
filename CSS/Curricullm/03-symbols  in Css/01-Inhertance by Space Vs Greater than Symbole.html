@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+/*
+Space:
+It is the descendant selector. It allows you to style all the nested child elements of a parent element, regardless of how deep they are in the hierarchy.
+
+*/
+   .containerBySpace{
+    width: 250px;
+    height: 500px;
+    border: solid 5px black;
+   } 
+
+   .containerBySpace p{
+    background-color: red;
+    color: black;
+    border-radius: 5px;
+   }
+
+  /*
+  > Sign:
+It is a child selector, which selects DIRECT child elements of
+ a specified parent element.
+
+  */ 
+
+  .containerByDirect{
+    width: 250px;
+    height: 500px;
+    border: solid 5px black;
+   } 
+
+   .containerByDirect > p{
+    background-color: red;
+    color: black;
+    border-radius: 5px;
+   } 
+</style>
+    
+</head>
+<body>
+    
+    <div class="containerBySpace">
+        <p> Home </p>
+        <p> Products </p>
+
+        <div>
+            <p> Contact US  </p>
+        </div>
+
+        <div>
+            <p> About  US  </p>
+        </div>
+        <p> Services </p>
+        <p> Brands </p>
+    </div>
+
+
+   <hr style="width: 100%; height: 5px;background-color: black;"/>
+
+
+   <div class="containerByDirect">
+    <p> Home </p>
+    <p> Products </p>
+
+    <div>
+        <p> Contact US  </p>
+    </div>
+
+    <div>
+        <p> About  US  </p>
+    </div>
+    <p> Services </p>
+    <p> Brands </p>
+</div>
+</body>
+</html>
