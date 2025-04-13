@@ -1,0 +1,26 @@
+.myimg{
+          width: 100%;
+          height: 250px;
+}
+
+.container .row .col-xxl-6 iframe{
+          width: 100%;
+          height: 300px;
+          border: solid 5px black;
+}
+
+.container .row .col-xxl-2 img{
+          width:150px;
+          height: 150px;
+          border: solid 5px black;
+          border-radius: 100%;
+}
+
+.foldArea{
+          height: 100vh;
+          background-color: green;
+}
+
+.foldArea .row img{
+          width: 150px;
+}
