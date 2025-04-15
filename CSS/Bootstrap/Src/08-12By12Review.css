@@ -1,0 +1,15 @@
+.leftBgSlider{
+          width: 100%;
+          height: 400px;
+          background-image: url("../Photo/bgleft1.jpg");
+          background-size: cover;
+}
+
+
+.myImg{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+
+}

@@ -1,0 +1,76 @@
+
+.leftBgSlider{
+          width: 100%;
+          height: 400px;
+          background-image: url("../Photo/bgleft1.jpg");
+          background-size: cover;
+}
+
+
+.rightBgSlider{
+          width: 100%;
+          height: 400px;
+         background-color: red;
+}
+
+
+.RightBgSlider1{
+          width: 100%;
+          height: 200px;
+          background-image: url("../Photo/bgright1.jpg");
+          background-size: cover;
+}
+
+
+.RightBgSlider2{
+          width: 100%;
+          height: 200px;
+          background-image: url("../Photo/bgright2.jpg");
+          background-size: cover;
+}
+
+.RightBgSlider3{
+          width: 100%;
+          height: 200px;
+          background-image: url("../Photo/bgright3.jpg");
+          background-size: cover;
+}
+
+.RightBgSlider4{
+          width: 100%;
+          height: 200px;
+          background-image: url("../Photo/bgright4.jpg");
+          background-size: cover;
+}
+
+.colbg4-1{
+          background-color: green;
+          height:auto;
+}
+.colbg4-2{
+          background-color: red;
+          height: auto;
+}
+.colbg4-3{
+          background-color: rgb(102, 248, 238);
+          height: auto;
+}
+
+.myImg{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+
+}
+
+.mYAnchor{
+          color: white;
+          font-size: 1.5em;
+}
+
+.btnsocial{
+         width: 100%;
+          height: 35px;
+          background-color: orange;
+}
