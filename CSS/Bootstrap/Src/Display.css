@@ -1,0 +1,18 @@
+
+.GridBgColor{
+          background-color: red;
+}
+
+
+.GridBgColorRow{
+          background-color: rgb(13, 34, 171);
+}
+
+.rowHeight{
+          height: 70px;
+}
+
+.myimg{
+          width: 100%;
+          height: 250px;
+}
