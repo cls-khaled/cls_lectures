@@ -1,0 +1,1 @@
+alert("Welcome To JS By External Sheet ");
