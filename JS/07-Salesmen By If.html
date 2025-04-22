@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>  Salesmen By If </title>
+
+          <script>
+                    /*------- Varaibles*/
+                    var FixedSalary=5000;
+                    var bounsPercenatge=0;
+                    var grossSales=2000000;
+                    var bounsAmount=0;
+                    var TotalSalary=0;
+                    var DeducationPerc=0;
+                    var DeductionAmount=0;
+                    var ExtraFixedPercentage=0;
+                    var extraFixedAmount=0;
+
+                    if(grossSales>=50000 && grossSales<=200000)
+                     {
+                    bounsPercenatge=2.5;
+                    bounsAmount=(grossSales*bounsPercenatge)/100;
+                    TotalSalary=FixedSalary+bounsAmount;
+
+                    console.log("Gross sales is : "+grossSales);
+                    console.log("Fixed Salary is : "+FixedSalary);
+                    console.log("Bouns Percentage  is : "+bounsPercenatge);
+                    console.log("Bouns Amount is : "+bounsAmount);
+
+                    console.log("---------------------------------------------");
+                    console.log("Total Salary  is : "+TotalSalary);
+
+                     }
+
+                     else  if(grossSales>200000 && grossSales<=500000)
+                     {
+                    bounsPercenatge=7.5;
+                    bounsAmount=(grossSales*bounsPercenatge)/100;
+                    TotalSalary=FixedSalary+bounsAmount;
+
+                    console.log("Gross sales is : "+grossSales);
+                    console.log("Fixed Salary is : "+FixedSalary);
+                    console.log("Bouns Percentage  is : "+bounsPercenatge);
+                    console.log("Bouns Amount is : "+bounsAmount);
+
+                    console.log("---------------------------------------------");
+                    console.log("Total Salary  is : "+TotalSalary);
+
+                     }
+
+                     else  if(grossSales>500000 && grossSales<=1000000)
+                     {
+                    bounsPercenatge=9.5;
+                    bounsAmount=(grossSales*bounsPercenatge)/100;
+                    TotalSalary=FixedSalary+bounsAmount;
+
+                    console.log("Gross sales is : "+grossSales);
+                    console.log("Fixed Salary is : "+FixedSalary);
+                    console.log("Bouns Percentage  is : "+bounsPercenatge);
+                    console.log("Bouns Amount is : "+bounsAmount);
+
+                    console.log("---------------------------------------------");
+                    console.log("Total Salary  is : "+TotalSalary);
+
+                     }
+
+                     else  if(grossSales>1000000)
+                     {
+                    bounsPercenatge=12.5;
+                    ExtraFixedPercentage=33.5;
+                    extraFixedAmount=(FixedSalary*ExtraFixedPercentage)/100;
+                    FixedSalary+=extraFixedAmount;
+                    bounsAmount=(grossSales*bounsPercenatge)/100;
+                    TotalSalary=FixedSalary+bounsAmount;
+
+                    console.log("Gross sales is : "+grossSales);
+                    console.log("Fixed Salary is : "+FixedSalary);
+                    console.log("Bouns Percentage  is : "+bounsPercenatge);
+                    console.log("Bouns Amount is : "+bounsAmount);
+                    console.log("Extra Fixed Percnetage is : "+ExtraFixedPercentage);
+                    console.log("Extra Fixed Amount is : "+extraFixedAmount);
+                    console.log("---------------------------------------------");
+                    console.log("Total Salary  is : "+TotalSalary);
+
+                     }
+                     else if(grossSales<50000)
+                     {
+                     bounsPercenatge=0;
+                    DeducationPerc=22.5;
+                    DeductionAmount=FixedSalary-((FixedSalary*DeducationPerc)/100);
+                    FixedSalary-=DeductionAmount;
+                    TotalSalary=FixedSalary;
+
+                    console.log("Gross sales is : "+grossSales);
+                    console.log("Fixed Salary is : "+FixedSalary);
+                    console.log("Bouns Percentage  is : "+bounsPercenatge);
+                    console.log("Deduction Percentage is : "+DeducationPerc);
+                    console.log("Deduction Amoint  is : "+DeductionAmount);
+                    
+                    console.log("---------------------------------------------");
+                    console.log("Total Salary  is : "+TotalSalary);  
+                     }
+
+                     else
+                     {
+                              console.log("Inavlid Gross Sales");
+                     }
+          </script>
+</head>
+<body>
+          
+</body>
+</html>

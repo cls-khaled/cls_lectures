@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>  Iteration - loop</title>
+
+          <script>
+                    /* ----------  For - While - Do While  ---------*/
+
+                   for(var x=1;x<=10;x++)
+                   {
+                    console.log("Ana Z3lan ya abdo "+x);
+                   }
+
+                   console.log("========= For By Asceding ============");
+                   for(var i=10;i<=100;i+=10)
+                   {
+                    console.log(" For By Asc IS : "+i);
+                   }
+
+                   console.log("========= For By Descinding  ============");
+                   for(var z=100;z>=0;z-=10)
+                   {
+                    console.log(" For By Desc IS : "+z);
+                   }
+
+
+                   console.log("========= Employee Salary  ============");
+
+                   var employeeNum=100;
+                   var employeesalary=5000000;
+                   var avg=0;
+                   var totalsalary=0;
+                    var totalsalaryafterDeduction=0;
+                    var newsalaryAfterDeduction;
+
+                    for(var e=0;e<employeeNum;e++)
+                   {
+                     totalsalary+=employeesalary;
+
+                     console.log("Total Salary IS : "+totalsalary);
+                   }
+
+                   console.log("==============================================");
+
+                   console.log("Total Salary IS : "+totalsalary);
+
+                   avg=totalsalary/employeeNum;
+
+                   console.log("Average Salary is "+avg);
+
+                   if(avg>100000)
+                   {
+                    totalsalary-=(totalsalary*12.5)/100;
+                    console.log("Total salary After Deduction is : "+totalsalary);
+                    console.log("==============================================");
+
+                     newsalaryAfterDeduction=totalsalary/employeeNum;
+                     console.log("new salary After Deduction is : "+newsalaryAfterDeduction);
+                   }
+                   else
+                   {
+                    console.log("3ash Ya Regallllllllllllllla");
+                   }
+
+          
+          </script>
+</head>
+<body>
+          
+</body>
+</html>
