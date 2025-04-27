@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Function </title>
+
+          <script>
+                    function welcome()
+                    {
+                        console.log("Ya Welcome To Function New ");       
+                    }
+
+                    welcome();
+                    welcome();
+                   
+                    console.log("=======================================================");
+
+                    function WelcomeMember(fname)
+                    {
+                       console.log("Welcome MR : "+fname);        
+                    }
+
+                    WelcomeMember("Mina");
+
+                    console.log("=======================================================");
+
+                    function EmployeeDetails(fn,ln,add,gender,salary)
+                    {
+                            console.log("First name is : "+fn);   
+                            console.log("Last name is : "+ln);   
+                            console.log("Address is : "+add);   
+                            console.log("Gender is : "+gender);   
+                            console.log("Salary  is : "+salary);   
+                    }
+
+                    EmployeeDetails("Ahmed","Ali","Gzia",true,5800);
+
+                    console.log("=======================================================");
+
+                    //   var thname;
+                    //   var thelast;
+                    function CalcSalary(fixedSalary,bouns,deduction)
+                    {
+                       var result=fixedSalary+bouns-deduction;
+                       console.log("The Result is : "+result);
+                    }
+
+                  CalcSalary(9000,360,250);
+
+                  CalcSalary(15800,4980,3600);
+
+                  console.log("=================== Function With return ====================================");
+
+
+                  function CalcSalaryByReturn(fixedSalary,bouns,deduction)
+                    {
+                       var result=fixedSalary+bouns-deduction;
+                      
+                       return result;
+                    //    console.log(result);
+                    }
+ 
+
+                    console.log(CalcSalaryByReturn(5000,2500,1250));
+
+                    CalcSalaryByReturn(9000,5800,1250);
+
+                    console.log("=================== Encaspultion by Return ====================================");
+                        
+                     var TheResult=CalcSalaryByReturn(8900,1250,3600);
+
+                     console.log("The net Salary is : "+TheResult);
+
+                     if(TheResult>5000)
+                     {
+                              TheResult-=(TheResult*12.5)/100;
+                              console.log("The Result AFter Deduction is : "+TheResult);
+                     }
+                     else
+                     {
+                              TheResult+=(TheResult*7.5)/100;
+                              console.log("The Result AFter Extra Bouns is : "+TheResult);   
+                     }
+
+                     console.log("=================== Amazon  ====================================");
+
+                     function cart(qty,price)
+                     {
+                              var res=qty*price;
+                              return res;
+                     }
+
+                     var CartResult=cart(5,250);
+
+                     function promocode(discount)
+                     {
+                            var resulatAftrerPromo=CartResult-(CartResult*discount)/100;
+
+                            return resulatAftrerPromo;
+                     }
+
+                     var CartAfterPromo=promocode(10);
+
+                     function vat(tax)
+                     {
+                         var CartAfterTax=CartAfterPromo+(CartAfterPromo*tax)/100;
+                         return CartAfterTax;
+                     }
+
+                     var CartResultByTax=vat(14);
+
+                     function ServicesFees(fees)
+                     {
+                              var CartAfterServiceFees=CartResultByTax+(CartResultByTax*fees)/100;
+                              return CartAfterServiceFees;
+                     }
+
+                     var CartAfterServiceCost=ServicesFees(12.5);
+
+                     function ShippingAndWeight(destination,weight)
+                     {
+                              var CartAfterTaxandWeight;
+                              if(destination=="Cairo" && weight<=5)
+                     {
+                              CartAfterTaxandWeight=CartAfterServiceCost+50;
+                     }
+                     else if(destination=="Cairo" && weight>5)
+                     {
+                              CartAfterTaxandWeight=CartAfterServiceCost+50+(weight*20);
+
+                     }
+
+                     else if(destination=="UpperEgypt" && weight<=5)
+                     {
+                              CartAfterTaxandWeight=CartAfterServiceCost+150;
+
+                     }
+                     else if(destination=="UpperEgypt" && weight>5)
+                     {
+                              CartAfterTaxandWeight=CartAfterServiceCost+50+(weight*20);
+
+                     }
+                     else if(destination=="Delta" && weight<=5)
+                     {
+                              CartAfterTaxandWeight=CartAfterServiceCost+90;
+
+                     }
+                     else if(destination=="Delta" && weight>5)
+                     {
+                              CartAfterTaxandWeight=CartAfterServiceCost+90+(weight*20);
+
+                     }
+
+                     return CartAfterTaxandWeight;
+                     }
+
+                     var CartByDistanceAndWeight=ShippingAndWeight("Cairo",4);
+
+
+                     function PrintInvoice()
+                     {
+                         console.log("Cart Cost is : "+CartResult);
+                         console.log("Cart Cost After Promo code  is : "+CartAfterPromo);
+                         console.log("Cart Cost After Vat  is : "+CartResultByTax);
+                         console.log("Cart Cost After Service Fees  is : "+CartAfterServiceCost);
+                         console.log("Cart Cost After Shipping is : "+CartByDistanceAndWeight);
+                     }
+
+                     PrintInvoice();
+
+          </script>
+</head>
+<body>
+          
+</body>
+</html>

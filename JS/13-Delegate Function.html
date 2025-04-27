@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Delegate Function</title>
+
+          <script>
+
+                    // var result;
+                    // result(20,30);
+
+                    var TheWelcome=function()
+                    {
+                         console.log("Welcome With Delegate ");      
+                    }
+
+                    TheWelcome();
+                    // console.log(TheWelcome);
+
+                    console.log("---------------------------------");
+
+                     var summision=function(fixedsalary,bouns,deduction)
+                     {
+                              return fixedsalary+bouns-deduction;
+                     }
+
+                     console.log(summision(5000,2000,250));
+
+                     var theNet=summision(9000,2000,250);
+                     console.log("th Net : "+theNet);
+
+                     console.log("---------------------------------");
+
+                     var ProductPrice=function(PurchasingPrice,UnitProfiteper,GrossProfitper,Qty)
+                     {
+                        var TheNetPrice;
+                        if(UnitProfiteper>GrossProfitper)
+                        {
+                              if(Qty<=10)
+                        {
+                              TheNetPrice=PurchasingPrice+(PurchasingPrice*UnitProfiteper)/100;
+                        }
+                        else
+                        {
+                              TheNetPrice=PurchasingPrice+(PurchasingPrice*GrossProfitper)/100;
+                        }
+
+
+
+                        }
+                        else
+                        {
+
+                              console.log("can't Unitprice gretaer than gross price ");
+                              TheNetPrice=0;
+                        }
+                        
+                        return TheNetPrice;
+                     }
+
+                    
+                 var NetPrice=ProductPrice(1000,25,10,15);
+
+                 console.log("The Cost : "+NetPrice);
+          </script>
+</head>
+<body>
+          
+</body>
+</html>
