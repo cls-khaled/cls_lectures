@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title> Inhertance </title>
+
+          <script>
+                    class Employee{
+                              //---- property ---------
+
+                              constructor(firstname,lastname,gender,salary)
+                              {
+                               this.firstname=firstname;
+                               this.lastname=lastname;
+                               this.gender=gender;
+                               this.salary=salary;
+                              }
+
+                              earning()
+                              {
+                                        return  this.salary;
+                              }
+                    }
+
+                    //------------ Child Class = Dervied Class ----
+                    class Manager extends Employee
+                    {
+                      
+                    constructor(firstname,lastname,gender,salary,profite,ProfitePerc)
+                    {  
+                        super(firstname,lastname,gender,salary);
+                        this.profite=profite;
+                        this.ProfitePerc=ProfitePerc;
+                    }
+                    //---------- Over ride  ------------------
+                    earning()
+                    {
+                              return super.earning()+100;
+                    }
+
+                    earningManager()
+                    {
+                             
+                              return this.earning()+(this.profite*this.ProfitePerc)/100;
+                    }
+                    }
+
+
+                     //------------ Child Class = Dervied Class ----
+                     class Sales extends Employee
+                    {
+                      
+                    constructor(firstname,lastname,gender,salary,target,commsions)
+                    {  
+                        super(firstname,lastname,gender,salary);
+                        this.target=target;
+                        this.commsions=commsions;
+                    }
+
+                    earningSales()
+                    {
+                              return super.earning()+(this.target*this.commsions)/100;
+                    }
+                    }
+
+                     //------------ Child Class = Dervied Class ----
+                     class labor extends Employee
+                    {
+                      
+                    constructor(firstname,lastname,gender,salary,Overtime,Hourprice)
+                    {  
+                        super(firstname,lastname,gender,salary);
+                        this.Overtime=Overtime;
+                        this.Hourprice=Hourprice;
+                    }
+
+                   
+                    earningLabor()
+                    {
+                              return super.earning()+(this.Overtime*this.Hourprice);
+                    }
+
+                    }
+                    
+
+                    let ManagerObj=new Manager("Mina","Sharaf",true,5000,250000,10);
+                    console.log(ManagerObj.firstname);
+                    console.log(ManagerObj.lastname);
+                    console.log(ManagerObj.gender);
+                    console.log(ManagerObj.salary);
+                    console.log(ManagerObj.profite);
+                    console.log(ManagerObj.ProfitePerc);
+
+                    console.log("===================================");
+                    let ManagerNetSalary=ManagerObj.earningManager();
+                    console.log("net Salary  is : "+ManagerNetSalary);
+
+                    console.log("============ Over ride =======================");
+                    let OverRide=ManagerObj.earning();
+                    console.log(OverRide);
+
+                    console.log("=========== Sales men ========================");
+
+                    let SalesObj=new Sales("Abdo","Mohamed",true,5000,500000,12.5);
+                    console.log(SalesObj.firstname);
+                    console.log(SalesObj.lastname);
+                    console.log(SalesObj.gender);
+                    console.log(SalesObj.salary);
+                    console.log(SalesObj.target);
+                    console.log(SalesObj.commsions);
+
+                    console.log("===================================");
+                    let SalesNetSalary=SalesObj.earningSales();
+                    console.log("net Salary  is : "+SalesNetSalary);
+
+                    console.log("=========== Labor  ========================");
+
+
+                    
+                    let LaborObj=new labor("Ahmed","Mohamed",true,5000,20,100);
+                    console.log(LaborObj.firstname);
+                    console.log(LaborObj.lastname);
+                    console.log(LaborObj.gender);
+                    console.log(LaborObj.salary);
+                    console.log(LaborObj.Overtime);
+                    console.log(LaborObj.Hourprice);
+
+                    console.log("===================================");
+                    let LaborNetSalary=LaborObj.earningLabor();
+                    console.log("net Salary  is : "+LaborNetSalary);
+          </script>
+
+</head>
+<body>
+          
+</body>
+</html>

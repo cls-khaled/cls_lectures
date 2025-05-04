@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title> Random </title>
+
+          <script>
+                    
+var RandomNumber;
+
+RandomNumber=Math.random();
+
+console.log(RandomNumber);
+
+console.log("====================================");
+
+
+var RandomByMath;
+
+RandomByMath=Math.random()*9;
+
+console.log(RandomByMath);
+
+
+console.log("====================================");
+
+var RandomByApproximate;
+RandomByApproximate=Math.floor(Math.random()*88);
+
+console.log(RandomByApproximate);
+
+
+console.log("=============== Random Range From 1 To 9 =====================");
+
+var RandomByRange;
+RandomByRange=Math.floor(Math.random()*88)+1;
+// RandomByRange=Math.floor(Math.random()*9)+1;
+console.log(RandomByRange);
+
+
+console.log("=============== Random By Function =====================");
+
+function GetRandom(min,max)
+{
+    var res=Math.floor(Math.random()*(max-min)+min);
+
+    return res;
+}
+
+RandomNumerByFunction=GetRandom(5,200);
+
+console.log(RandomNumerByFunction);
+
+
+          </script>
+</head>
+<body>
+          
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title> Sub String </title>
+          <script>
+                    
+//-- String Treatment as Array 
+var myString="Java Script";
+
+console.log("---- Get Length ----------------");
+console.log(myString.length);
+
+
+console.log("---- Get Array Charcter By Index  --------------");
+//-- Charcter By Array Index
+
+console.log(myString.charAt(0));
+console.log(myString.charAt(3));
+console.log(myString.charAt(11));
+
+
+console.log("----  Get Index Of Charcter --------------");
+//---- Get Index Of Charcter ----------
+
+console.log(myString.indexOf("v"));
+
+
+console.log("----  Get Last index Of charcter --------------");
+
+//--- Get Index of Last index Of ---
+console.log(myString.indexOf("a"));
+console.log(myString.lastIndexOf("a"));
+
+
+console.log("----  Remove Space in left And Right  Charcter --------------");
+//--- Remove Space in Charcter
+var myStringBySpace="     Java Script    Es6      ";
+
+console.log(myStringBySpace.trim());
+
+
+console.log("---- Upper and Lower Case -----------");
+//--- Upper and Lower Case ---------
+var myStringLowerAndUpper="Java Script";
+console.log(myStringLowerAndUpper.toLowerCase());
+console.log(myStringLowerAndUpper.toUpperCase());
+console.log(myStringLowerAndUpper.toUpperCase().trim());
+
+console.log("---- Get Word From Full  sentance by SLice -----------");
+//--- Get Word From Full  sentance by SLice ---------
+
+var partOFWord="    Java Script New Editions    ";
+console.log(partOFWord.slice(0,6)); //--- Without Trim 
+console.log(partOFWord.trim().slice(0,4)); //------ with Trim 
+
+
+console.log("---- Get Word From Full  sentance by SLice  by Dynamic Length -----------");
+var DynamicWord="JavaScriptNew ";
+
+console.log(DynamicWord.trim().slice(0,DynamicWord.indexOf(5))); //-- from zero to space in the End
+
+var DynamicWordWithStartSpace=" JavaScriptNew      ";
+console.log(DynamicWordWithStartSpace.slice(DynamicWordWithStartSpace.indexOf(6)).trim());
+
+//---------- Concatinate ------------------------
+
+console.log("----  Concatinate ------");
+
+var firstName="Omar";
+var lastName="Mahmoud";
+
+console.log(firstName.concat("-************",lastName));
+
+//---------- Replace ------------------------
+console.log("----  Replace  ------");
+var FullName="Eng:Mahmoud Mohamed";
+console.log(FullName);
+console.log(FullName.replace("Eng","MR"));
+
+//---------- Replace  ALL ------------------------
+console.log("----  Replace  ALL  ------");
+var FullNameBYReplaceALL="Eng:   Mahmoud Mohamed   ";
+console.log(FullNameBYReplaceALL);
+console.log(FullNameBYReplaceALL.replaceAll(" ","****"));
+
+
+          </script>
+</head>
+<body>
+          
+</body>
+</html>

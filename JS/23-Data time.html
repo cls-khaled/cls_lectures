@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title> Date Time </title>
+
+          <script>
+                    
+console.log("======= Epic Date ======");
+var EpicDate= new Date();
+// var EpicDate= new Date(1000000000000000) //;
+console.log(EpicDate);
+
+
+console.log("======= Current Date ======");
+var CurrentDate= new Date(1);
+console.log(CurrentDate);
+
+
+console.log("======= Date Formate ======");
+var DateFormate= new Date(2022,0,12,15,30,15,3);//-- Year - Mont [From 0 to 11]- Day - Minute - Second - MilleSecond 
+console.log(DateFormate);
+
+
+console.log("======= Date Formate String ======");
+var DateString= new Date("March 11,2022");//-- Year - Mont [From 0 to 11]- Day - Minute - Second - MilleSecond 
+console.log(DateString);
+
+
+console.log("======= Date  By Get Function ======");
+
+var MyDate=new Date();
+console.log(MyDate.getFullYear());
+console.log(MyDate.getMonth());
+console.log(MyDate.getDay()); //=== Day Of Week
+console.log(MyDate.getDate()); //-- Daye Of Month
+console.log(MyDate.getHours());
+console.log(MyDate.getMinutes());
+console.log(MyDate.getSeconds());
+console.log(MyDate.getMilliseconds());
+
+
+console.log("======= Date  By Set Function ======");
+
+MyDate.setFullYear(2022);
+MyDate.setMonth(8);
+MyDate.setDate(10);
+
+
+console.log(MyDate.getFullYear());
+console.log(MyDate.getMonth());
+console.log(MyDate.getDate()); //-- Daye Of Month
+
+          </script>
+</head>
+<body>
+          
+</body>
+</html>

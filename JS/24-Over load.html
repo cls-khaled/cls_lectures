@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title> Over Load </title>
+          <script>
+                    class Employee{
+                              constructor(firstname,lastname,address)
+                              {
+                                        this.firstname=firstname;
+                                        this.lastname=lastname;
+                                        this.address=address;
+                              }
+
+                              constructor(salary,Gender)
+                              {
+                                this.salary=salary;
+                                this.Gender=Gender;
+                              }
+
+                              constructor(qulification,experinceyears)
+                              {
+                                        this.qulification=qulification;
+                                        this.experinceyears=experinceyears;
+                              }
+                    }
+
+                    //---------------------
+
+                    let emp = new Employee("ahmed","ali","Giza");
+
+                    let emp2= new Employee(5000,true);
+
+                    let emp3=new Employee("Cs",20);
+          </script>
+</head>
+<body>
+          
+</body>
+</html>
