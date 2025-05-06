@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height:100vh ;
+    background: linear-gradient(90deg,#dd2476 -1.19%,#ff512f 100%);
+    color: white;
+}
+
+.container{
+    max-width: 75rem;
+    padding: 1rem;
+    margin-inline: auto;
+}
+
+.accordion{
+    padding-block-start: 12rem;
+}
+
+.card{
+    background-color: rgba(0,0,0,.1);
+    margin-inline-end: .1rem;
+    border: 1px solid rgba(0,0,0,.05);
+}
+
+.link{
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: unset;
+    color: #fff;
+    cursor: pointer;
+
+    transition: all 300ms ease-in-out;
+
+}
+
+.link h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+}
+
+.content-accordion{
+    padding:  0px 1rem;
+    max-height: 0px;
+    overflow: hidden;
+
+    transition: all 300ms ease-in-out;
+
+}
+
+.fa-chevron-down{
+    transition: all 300ms ease-in-out; 
+}
+/*------- Add Active Class -------------*/
+
+/* .content-accordion.active
+{
+    max-height: 10rem;
+    padding: 1rem;
+} */
+
+.content-accordion:is(.active)
+{
+    max-height: 50rem;
+    padding: 1rem;
+    display: block;
+    background-color: yellow;
+}
+
+.link:is(.active){
+    background-color: rgba(26, 11, 11, 0.5);
+}
+
+.link:is(.active) i{
+   rotate: 180deg;
+}

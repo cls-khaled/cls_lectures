@@ -1,0 +1,100 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+    padding: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    font-size: 16px;
+    overflow: hidden;
+    background-color: #1c1e26;
+    color: #fff;
+    direction: rtl;
+  }
+  
+  input,textarea {
+    padding: 10px;
+    font-size: 20px;
+    border: 0px;
+  
+    outline: 0px;
+    border-radius: 5px;
+  }
+  
+  input,button,textarea{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  button {
+    border: 0px;
+    outline: 0px;
+    background-color: brown;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  
+  div#success {
+    position: fixed;
+    top: 50px;
+    right: 30px;
+    background: #badc58;
+    color: green;
+    padding: 5px;
+    min-width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    transform: translateX(180px);
+    opacity: 0;
+    transition: 1s;
+  }
+  
+  .active {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  #demo{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+  }
+  
+  #start,#send,#close{
+     border: 0px;
+     outline: 0px;
+     background-color: green;
+     font-size: 20px;
+     padding: 10px 20px;
+     color: #fff;
+     cursor: pointer;
+     border-radius: 10px;
+  }
+
+  #send{
+    background-color: #30336b;
+  }
+
+  #start{
+    background-color: #eb4d4b;
+  }
+
+
+  #form-chat{
+    width: 500px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  #form-chat>input ,#form-chat>textarea{
+width:95%;
+margin-bottom: 15px;
+border: 1px solid #ddd;
+  }

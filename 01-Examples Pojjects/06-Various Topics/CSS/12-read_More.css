@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.box{
+    padding: 15px 20px;
+    background-color: #f7f7f7;
+}
+
+.more{
+    display: none;
+}
+
+button{
+    background-color: #DDD;
+    padding: 8PX 15PX ;
+    border: 0px;
+    margin-top: 15px;
+}
+
+button:hover{
+    background-color: #ccc;
+}

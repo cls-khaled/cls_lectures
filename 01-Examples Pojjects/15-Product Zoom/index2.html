@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.zoom {
+  border: 3px solid #ccc;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 280px;
+  cursor: zoom-in;
+}
+.zoom div {
+  height: 33.33%;
+  width: 33.333%;
+  z-index: 1;
+  float: left;
+  display: inline-block;
+  position: relative;
+}
+.zoom__top.zoom__left:hover ~ .zoom__image {
+  transform: translate(20%, 20%) scale(1.5);
+}
+.zoom__top.zoom__centre:hover ~ .zoom__image {
+  transform: translate(0%, 20%) scale(1.5);
+}
+.zoom__top.zoom__right:hover ~ .zoom__image {
+  transform: translate(-20%, 20%) scale(1.5);
+}
+.zoom__middle.zoom__left:hover ~ .zoom__image {
+  transform: translate(20%, 0) scale(1.5);
+}
+.zoom__middle.zoom__centre:hover ~ .zoom__image {
+  transform: translate(0, 0) scale(1.5);
+}
+.zoom__middle.zoom__right:hover ~ .zoom__image {
+  transform: translate(-20%, 0) scale(1.5);
+}
+.zoom__bottom.zoom__left:hover ~ .zoom__image {
+  transform: translate(20%, -20%) scale(1.5);
+}
+.zoom__bottom.zoom__centre:hover ~ .zoom__image {
+  transform: translate(0, -20%) scale(1.5);
+}
+.zoom__bottom.zoom__right:hover ~ .zoom__image {
+  transform: translate(-20%, -20%) scale(1.5);
+}
+.zoom__image {
+  transition: all 1.5s ease;
+  display: block;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="zoom">
+          <div class="zoom__top zoom__left"></div>
+          <div class="zoom__top zoom__centre"></div>
+          <div class="zoom__top zoom__right"></div>
+          <div class="zoom__middle zoom__left"></div>
+          <div class="zoom__middle zoom__centre"></div>
+          <div class="zoom__middle zoom__right"></div>
+          <div class="zoom__bottom zoom__left"></div>
+          <div class="zoom__bottom zoom__centre"></div>
+          <div class="zoom__bottom zoom__right"></div>
+          <img class="zoom__image" src="shoe-img.jpg" alt="">
+        </div>
+      </div>
+      
+</body>
+</html>

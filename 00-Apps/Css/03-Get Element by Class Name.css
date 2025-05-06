@@ -1,0 +1,11 @@
+
+.imgSTyle{
+          width: 350px;
+          height: 350px;
+          border: solid 10px green;
+          padding: 20px;
+}
+
+.hidePhoto{
+          display: none;
+}

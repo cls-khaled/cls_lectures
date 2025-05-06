@@ -1,0 +1,14 @@
+
+.formHide{
+          display: none;
+}
+
+
+.formShow{
+          display: block;
+          position: absolute;
+          top: 10%;
+          left: 30%;
+          border: solid 10px black;
+          width: 300px;
+}
