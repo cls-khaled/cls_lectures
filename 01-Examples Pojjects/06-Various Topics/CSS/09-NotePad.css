@@ -48,7 +48,7 @@ input,textarea,button{
 }
 
 .box-form button,
-#output .item button 
+#output .item button ,.remove
 {
     padding: 10px ;
     font-size: 18px;

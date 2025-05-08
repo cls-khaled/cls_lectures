@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>  Pop Up Window </title>
+
+     <style>
+
+          .popUpwindow{
+            
+          width: 600px;
+          height: 400px;
+          background-color: red;
+          position: absolute;
+          top: 20%;
+          left: 15%;
+          display: none;
+          }
+
+          .popUpwindow.active{
+
+                 display: block;
+          }
+     </style>
+
+     <script>
+         
+       window.onload=function()
+       {
+          let popup=document.getElementsByClassName("popUpwindow")[0];
+          console.log("yesssssssssssss");
+          popup.classList.add("active");
+       }
+     </script>
+</head>
+<body>
+          
+          <div class="popUpwindow"></div>
+</body>
+</html>

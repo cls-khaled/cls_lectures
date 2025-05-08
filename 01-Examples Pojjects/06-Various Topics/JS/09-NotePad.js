@@ -41,14 +41,18 @@ add.addEventListener('click',function(e){
 
         output.appendChild(item);
 
+
         InputText.value='';
         InputTitle.value='';
-
+       
     }
 
     //---------- Delet Notes ------------
 
     btnDelete.addEventListener('click',function(){
+
+        // output.removeChild(item);
+
         output.removeChild(this.parentElement);
     })
 })

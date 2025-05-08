@@ -6,11 +6,11 @@
 // }
 
 
-s
+
 //---02- Stop Page Reload And Call Local Storage 
 
 window.onload=function(){
-    let isDarkMode=localStorage.getItem('x');
+    let isDarkMode=localStorage.getItem('Mark');
     if(isDarkMode=='true')
     {
         document.body.classList.add('dark-mode');
@@ -24,11 +24,11 @@ function toggleDarkMode(){
 
     if(body.classList.contains('dark-mode'))
     {
-        localStorage.setItem('x','true');
+        localStorage.setItem('Mark','true');
     }
     else
     {
-        localStorage.removeItem('x');
+        localStorage.removeItem('Mark');
     }
 }
 

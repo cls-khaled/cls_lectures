@@ -8,13 +8,16 @@ window.addEventListener('scroll',function(){
     //-- document.body.scrollTop 
     //-- let width(سجل حركة الاسكرول || نفس الفانكشن فى فيرجن المتصفحات القديمة) /
     //-- (طول الصفحة  - المنطقة المرئية من الصفحة )
-    let width=(document.body.scrollTop || document.documentElement.scrollTop)
+    let width=(document.documentElement.scrollTop)
     / (document.body.scrollHeight - document.documentElement.clientHeight)*100;
 
+    console.log("Scroll Space : "+document.documentElement.scrollTop);
+    console.log("All Page  : "+document.body.scrollHeight);
+    console.log("Fold Area  : "+document.documentElement.clientHeight);
     
     
     
-    // progress.style.width=width+'%';
+   //  progress.style.width=width+'%';
     progress.style.width=`${width}%`
     console.log(width);
     // console.log(document.body.scrollTop);
