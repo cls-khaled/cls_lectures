@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-Reduce specificity</title>
+    
+    <style>
+
+.container {
+  width: 450px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* remove "img" from the selector to apply the styles to any element */
+img.thumbnail {
+  border: 1px solid black;
+  margin: 0;
+  padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <!-- image only -->
+        <img class="thumbnail" src="./photo/Logo.png" alt="description">
+        
+        <div class="thumbnail"><!-- image with caption using <div> -->
+          <img src="./photo/Logo.png" alt="image description">
+          <p>Caption</p>
+        </div>
+        
+        <figure class="thumbnail"><!-- image with caption using <figure> -->
+          <img src="./photo/Logo.png" alt="image description">
+          <figcaption>
+            <p>Caption</p>
+          </figcaption>
+        </figure>
+      </div>
+
+
+</body>
+</html>

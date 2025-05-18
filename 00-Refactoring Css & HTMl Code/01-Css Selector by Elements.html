@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div,p[class^="test"] {
+  background: salmon;
+  border: solid 2px black;
+  font-size: 2.5em;
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of the [attribute^=value] selector</h1>
+
+<p>Set a background color on all div elements that have a class attribute value that begins with "test":</p>
+
+<div class="testing">The first div element.</div>
+
+<div class="second_test">The second div element.</div>
+
+<div class="test">The third div element.</div>
+
+<div class="test_ex">The fourth div element.</div>
+
+<p class="test">This is a paragraph.</p>
+
+<p class="test_ex">This is a paragraph.</p>
+
+</body>
+</html>

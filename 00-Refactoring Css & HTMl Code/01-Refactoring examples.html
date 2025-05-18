@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refactoring examples</title>
+
+    <style>
+        .bg {
+  background-color: lightblue; 
+}
+.logo {
+  border: 2px solid #008B8B;
+  width: 400px;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+    </style>
+</head>
+<body>
+    
+    <!-- Before -->
+<div class="bg">
+    <h1>Heading</h1>
+  </div>
+  <!-- Refactored -->
+  <h1 class="bg">Heading</h1>
+  
+  
+  <!-- Before -->
+  <div class="header">
+    <div class="logo">
+      <img src="./photo/Logo.png" alt="description">
+      <h1>Heading</h1>
+    </div>
+  </div>
+  <!-- Refactored -->
+  <header class="logo" >
+    <img src="./photo/Logo.png" alt="description">
+        <h1>Heading</h1>
+  </header>
+
+</body>
+</html>
