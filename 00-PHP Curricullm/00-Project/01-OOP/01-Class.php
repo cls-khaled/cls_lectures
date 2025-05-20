@@ -24,6 +24,7 @@ class Employee {
     $this->Salary = $Salary;
   }
 
+  
   //-------------- Destructor -----------------------
 
   function __destruct() {
