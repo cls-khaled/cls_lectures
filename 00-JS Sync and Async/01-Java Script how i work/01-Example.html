@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+  //--------- 01 Functions       
+function getBread()
+{
+console.log("1- Getting Bread");
+return "bread";
+}
+
+  //--------- 02 Functions 
+
+function addTomatoes(sandwich)
+{
+console.log("2- Adding Tomatoes");
+return  sandwich+"  "+"Tomatoes";
+}
+
+//--------- 03 Functions 
+function addVegtables(sandwich)
+{
+console.log("1- Adding Vegtables");
+return  sandwich+"  "+"Vegtables";
+}
+
+
+  //--------- 01 Functions 
+
+function makeSandwitch()
+{
+
+ 
+let sandwich=getBread();
+sandwich=addTomatoes(sandwich);
+sandwich=addVegtables(sandwich);
+
+console.log("Final Result is : ",sandwich);
+}
+
+
+//----------- Call Main Function -------
+makeSandwitch();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
