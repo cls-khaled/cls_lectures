@@ -1,0 +1,8 @@
+01- Open Terminal 
+--------------------
+php artisan make:controller ControllerName
+
+
+02- Create Controller With Standard Functions
+-----------------------------------
+php artisan make:controller ControllerName --resource
