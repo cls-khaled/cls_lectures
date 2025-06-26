@@ -1,0 +1,14 @@
+
+.MycontentStyle{
+    padding: 50px;
+    background-color: green;
+    border: solid 50px black;
+
+}
+
+
+.myPhoto img{
+    width: 250px;
+    height: 250px;
+    border: solid 5px green;
+}

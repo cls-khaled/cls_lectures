@@ -1,0 +1,41 @@
+Step 1
+-------------
+01- Copy Theme To Public Folder 
+02-يجب اضافة كافة ملفات وفولدرات الاستايل شيت والجافا سكريبت الي فولدرى البابليك مباشرة
+03- يتم استدعاء ملفات الاستايل شيت والجافا سكريبت من خلال اداة ال
+Helper Tools :
+
+<link rel="stylesheet" type="text/css" href="{{URL::asset('css/bootstrap.css')}}" />
+
+href="{{URL::asset('css/bootstrap.css')}}
+
+====================
+
+step 2
+------------
+01-Create Master Page File
+02- @yield('content')من الممكن ان تحتوي الماستر بيج علي اكثر من يلد 
+03- Go to Child View and inhertnace by :
+
+@extends('Layout.MasterLayout')
+
+@section('content')
+
+ <!-- Add Content belong This View -->
+
+ <h1> Content belong This View </h1>
+
+@stop
+
+**********************************************
+Step 3
+-----------------------
+
+To Divid Design to some Parts 
+
+01- Create Folder as Includes
+02- Create Some Views Blade
+03- Go to Parent View and add @include('Includes.Footer')
+
+
+
